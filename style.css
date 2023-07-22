@@ -1,0 +1,117 @@
+*{
+    list-style: none ;
+    box-sizing: border-box ;
+
+}
+
+h1{
+    border: 5px double white;
+    color: antiquewhite;
+    text-align: center;
+    margin: 150px;
+    font-family: 'Kristen ITC';
+     
+    
+}
+
+
+
+body {
+    height: 145vh;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(../img/IMG-20230620-WA0016.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100px;
+
+}
+.logo{
+    height: 50px;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+.item:hover{
+    color: rgb(255, 0, 0);
+
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+
+}
+label{
+    cursor: pointer;
+    display: none;
+}
+.btn{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+        margin: 0;
+    }
+    label {
+        display: initial;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .item{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    .btn{
+        width: 100px;
+    
+    }
+    #menu:checked ~ .menu {
+        display: initial;
+    }
+
+}
